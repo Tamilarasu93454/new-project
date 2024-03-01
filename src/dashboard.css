@@ -1,0 +1,42 @@
+
+.Navbar-container{
+    /* border:4px solid rgb(204, 28, 57); */
+    /* background:linear-gradient( to right, rgb(121, 1, 1),green,yellow,violet,orange,blue,pink); */
+   
+
+}
+.navbar-div{
+    display: flex;
+width: 10%;
+justify-content: space-between;
+}
+.header{
+    /* border: 1px solid grey; */
+  box-shadow: 0 0 12px grey;
+}
+.navbar-div p{
+
+
+}
+.container-content{
+    /* margin-top: 5px; */
+   display: grid;
+row-gap: 10px;
+
+}
+.content-row{
+    column-gap: 10px! important;
+}
+.content-col{
+   
+   
+    border: 1px solid rgb(138, 39, 39);
+}
+
+.sidebar{
+    /* background-color: rgb(59, 51, 48); */
+    padding: 0%;
+}
+.Dashboard-container{
+    background-color:honeydew;
+}
