@@ -9,9 +9,13 @@ import LoginPage from './components/login';
 import Dashboard from './components/dashboard';
 import Register from './components/register';
 import Tables from './components/tables';
+import Profile from './components/profile'
+import Employee from './components/employee';
+import Insights from './components/insights';
 
 
 import { useState } from 'react';
+
 
 
 function App() {
@@ -64,6 +68,9 @@ const theme = createTheme();
                                            formData={formData}
                                       
                                           />} />
+       <Route path='/profile' element={<Profile />} />
+       <Route path='/employee' element={<Employee />} />
+       <Route path='/insights' element={<Insights />} />
       </Routes>
       </Router>
     </div>

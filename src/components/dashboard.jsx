@@ -20,6 +20,16 @@ function Dashboard({ submittedData, handleSubmit ,formData,setFormData}){
    navigate('/dashboard')
 
   }
+  const handleProfile=()=>{
+    navigate('/profile')
+   }
+
+   const handleEmployee=()=>{
+    navigate('/employee')
+   }
+   const handleInsights=()=>{
+    navigate('/insights')
+   }
 
     const [isOpen1, setIsOpen1] = useState(false);                ////list opening
 
@@ -66,9 +76,9 @@ function Dashboard({ submittedData, handleSubmit ,formData,setFormData}){
 
         {isOpen1 && (
           <ul>
-            <li style={{listStyle:'none',color:'white',padding:'5px'}}>Employee</li>
-            <li style={{listStyle:'none',color:'white',padding:'5px'}}>Insights</li>
-            <li style={{listStyle:'none',color:'white',padding:'5px'}}>Profile information</li>
+            <li style={{listStyle:'none',color:'white',padding:'5px'}}  onClick={handleEmployee}>Employee</li>
+            <li style={{listStyle:'none',color:'white',padding:'5px'}}  onClick={handleInsights}>Insights</li>
+            <li style={{listStyle:'none',color:'white',padding:'5px'}} onClick={handleProfile}>Profile information</li>
             
           </ul>
         )}   
